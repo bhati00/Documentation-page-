@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Documentation page </title>
+	<link rel="stylesheet" type="text/css" href="Documentation .css">
+</head>
+<body>
+ <nav id="navbar"> <!-- Navigation Bar -->
+  <header>FCC Reference Sheet</header>
+  <ul>
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#Responsive_Web_Design" rel="internal"><li>Responsive Web Design</li></a>
+    <a class="nav-link" href="#Basic_HTML_and_HTML5" rel="internal"><li>Basic HTML and HTML5</li></a>
+    <a class="nav-link" href="#Basic_CSS" rel="internal"><li>Basic CSS</li></a>
+    <a class="nav-link" href="#References" rel="internal"><li>References</li></a>
+  </ul>
+</nav>
+<main id="main-doc">
+	<section class="main-section" id="Introduction"> <!-- Introduction Container -->
+    <header><u>Introduction</u></header>
+    <article>
+      <p>freeCodeCamp is a nonprofit, open sourced organization that acts as an interactive learning platform to teach anyone how to code multiple programming languages. fCC also comprises of an online community forum and chat rooms to further support their friendly learning environment. The lessons start out with tutorials and instructional programming and advance to personal projects and have the students be a part of other nonprofits to build web applications. With all of these tools and resources available the students gain practical developer experience and knowledge.</p>
+      <p>Launched in October of 2014, freeCodeCamp was founded by the great Quincy Larson. Quincy is a software developer who took up programming after graduate school and used these skills to create fCC. His vision was a way for pupils to have the tools to advance from beginners to job ready developers.<a name="1_back_to_top"></a><a class="super" href="#1" rel="internal"><sup>[1]</sup></a></p>
+      <p>By the Facts/Numbers<a name="2_back_to_top"></a><a class="super" href="#2" rel="internal"><sup>[2]</sup></a></p>
+      <li>Languages offered: HTML5, CSS3, JavaScript, jQuery, Bootstrap, Sass, React.js, Node.js, Express.js, MongoDB, and Git to name a few</li>
+      <li>1,500+ Campsites or local meetup groups that campers can attend to recieve/offer help</li>
+      <li>2,080+ hours of coding lessons offered</li>
+      <li>800+ hours of nonprofit working expierence</li>
+      <li>6 Certificates can be earned for completing each section</li>
+      <li>840,000+ Registered Campers</li>
+      <li>400,000+ Active Campers each month</li>
+      <li>$1,400,000+ donated in pro-bono code</li>
+      <li>4,000+ Campers recieved their first developer job</li>
+      <li>5,000+ Campers recieved a better developer job</li>
+    </article>
+  </section>
+  <br>
+  <section class="main-section" id="Responsive_Web_Design"> <!-- Responsive Web Design Container -->
+    <header><u>Responsive Web Design</u></header>
+    <article>
+      <p>Responsive web design suggests that the approach of designing and developing a website should repond to the user's behavior and enviornment based on platform, orientation and screen size. The practice consists of a well organized HTML structure and a mix of flexible grids, customizable layouts and images of intelligent use of CSS and it's media queries. For example, as a user switches from a laptop to a tablet or phone, the website will automatically switch media to accommodate for resolution, image size and scripting abiliities. To put simply, the website will have the technology to automatically respond to the user's preferences and different devices. This eliminates the need for multiple different design and development phases for each new gadget that is new to the market.<a name="3_back_to_top"></a><a class="super" href="#3" rel="internal"><sup>[3]</sup></a></p>
+     
+      <p>Now that you are familiar with what freeCodeCamp and responsive web design are and have to offer, this article will reference the main sections of responsive web design taken from the beta version of freeCodeCamp. If you're ever stuck or you forget what that certain element tag is used for this technical document is here to assist you!</p>
+    </article>
+  </section>
+  <br>
+   <section class="main-section" id="Basic_HTML_and_HTML5"> <!-- Basic HTML and HTML5 Container -->
+    <header><u>Basic HTML and HTML5</u></header>
+    <article>
+      <p>Hyper Text Markup Language, or better known as HTML, is a markup language to describe the structure of a web page much like a skeleton of a human body. An array of unique syntax of elements are used to organize and give information about the content to the web browser. Opening and closing tags are used on elements that surround content and gives meaning to it. There are different element tags that have different functions and uses that could include paragraphs, headers, links or lists.<a name="4_back_to_top"></a><a class="super" href="#4" rel="internal"><sup>[4]</sup></a></p>
+      <p>This section references how to use HTML elements to give structure and meaning to your web content. Listed below are the topics covered for HTML and HTML5.</p>
+      <li style="list-style: none;"><a class="html" href="#the_declaration" rel="internal">The Declaration</a> | <a class="html" href="#comments" rel="internal">Comments</a> | <a class="html" href="#the_head" rel="internal">The Head</a> | <a class="html" href="#the_main_body" rel="internal">The Main/Body</a> | <a class="html" href="#headings" rel="internal">Headings</a> | <a class="html" href="#paragraphs" rel="internal">Paragraphs</a> </li>
+      <br>
+      <h2 id="the_declaration">The Declaration</h2>
+      <p>At the start of your coding document you need to declare the language being used so the browser knows what version of HTML you're using and is able to read it. Most major browsers now support the latest installment, HTML5. Below is how you declare the language, in this case it'll be HTML5. This version is declared with the &lt;!DOCTYPE html&gt; tag. Don't forget the &lt;html&gt; tags that wrap around your html code!<a name="5_back_to_top"></a><a class="super" href="#5" rel="internal"><sup>[5]</sup></a></p>
+        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  ... &lt;!-- Your code here --&gt;
+&lt;/html&gt;
+        </code>
+      <br>
+      <h2 id="comments">Comments</h2>
+      <p>Comments are a way to leave notes and reminders about the code for yourself or another programmer so they understand quickly what they are reading. Comments don't affect the code itself, they appear within the typed code but are not generated on the page. It's also a convenient way to make code inactive without having to delete it. Comments start with an opening tag of &lt;!-- and close with a --&gt; when finished.<a name="6_back_to_top"></a><a class="super" href="#6" rel="internal"><sup>[6]</sup></a></p>
+      <code>
+&lt;!-- This is a single line comment --&gt;
+
+&lt;!-- This is a
+multiple line comment --&gt;
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;body&gt; &lt;!-- Main Body --&gt;
+    &lt;div&gt; &lt;!-- Header Container --&gt;
+      &lt;h1&gt;Hello World!&lt;/h1&gt; &lt;!-- Heading Option 1 --&gt;
+      &lt;!-- &lt;h2&gt;Hello World!&lt;/h2&gt; Heading Option 2 --&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code>
+      <br>
+      <h2 id="the_head">The Head</h2>
+      <p>Any markup with information about your page would go into the head tag, which is essentially the header of the page. Metadata elements such as the &lt;link&gt; ,&lt;meta&gt; ,&lt;title&gt; , and &lt;style&gt; usually go inside the &lt;head&gt; element.</p>
+      <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;...&lt;/title&gt; &lt;!-- Your title here --&gt;
+    &lt;link...&gt; &lt;!-- Your link here --&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+      </code>
+      <br>
+      <h2 id="the_main_body">The Main/Body</h2>
+      <p>All markups containing content that make up the page would go into the main or the body tag. The body element acts as the body of all of the content of the page while the main element is inside of the body and contains the page's main content. All elements not part of the header or footer usually go inside one of these elements.<a name="7_back_to_top"></a><a class="super" href="#7" rel="internal"><sup>[7]</sup></a></p>
+      <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    ... &lt;!-- Your metadata here --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    ... &lt;!-- Some content here --&gt;
+    &lt;main&gt;
+      ... &lt;!-- Main content here --&gt;
+    &lt;/main&gt;
+    ... &lt;!-- Maybe some more content here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code>
+      <br>
+      <h2 id="headings">Headings</h2>
+      <p>The heading element tells the browser about the structure of the website. &lt;h1&gt; elements are often used for main headings as they are largest of the headings. &lt;h2&gt; through &lt;h6&gt; elements are generally used for subheadings to indicate different or new sections of your content.<a name="8_back_to_top"></a><a class="super" href="#8" rel="internal"><sup>[8]</sup></a></p>
+      <code id="heading_code">
+&lt;h1&gt;Heading 1&lt;/h1&gt;<h1>Heading 1</h1>
+&lt;h2&gt;Heading 2&lt;/h2&gt;<h2>Heading 2</h2>
+&lt;h3&gt;Heading 3&lt;/h3&gt;<h3>Heading 3</h3>
+&lt;h4&gt;Heading 4&lt;/h4&gt;<h4>Heading 4</h4>
+&lt;h5&gt;Heading 5&lt;/h5&gt;<h5>Heading 5</h5>
+&lt;h6&gt;Heading 6&lt;/h6&gt;<h6>Heading 6</h6>
+      </code>
+      <br>
+      <h2 id="paragraphs">Paragraphs</h2>
+      <p>Paragraphs are the preferred element for communicating text on websites. Just like in real writing, &lt;p&gt; tags organize and contain the meaning of the content within the body of the page.<a name="9_back_to_top"></a><a class="super" href="#9" rel="internal"><sup>[9]</sup></a></p>
+      <code>
+&lt;body&gt;
+&lt;main&gt;
+  &lt;h1&gt;Your Title Here&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph. Your content and talking points go here.&lt;/p&gt;
+&lt;/main&gt;
+&lt;/body&gt;
+      </code>
+      <br>      
+    </article>
+  </section>
+   <section class="main-section" id="Basic_CSS"> <!-- Basic CSS Container -->
+    <header><u>Basic CSS</u></header>
+    <article>
+      <p>Cascading Style Sheets, better known as CSS, tells the browser how to display the HTML framework on the page. This language controls the colors, fonts, positioning, spacing, sizing, decorations and transistions of every element. There are three main ways for these languages to communicate with each other to properly display a webpage. Inline styles can be directly written in HTML within each element with the style attribute. Another way CSS rules can be applied to HTML is by adding &lt;style&gt; tags in the HTML document and writing the code withen those. The most used method is to write the CSS code in a external style sheet and have the HTML document reference that sheet. This improves readability and reusability of the code. The best way to remember how these languages function is reffering to the HTML as the skeleton and CSS as the skin of a site.<a name="26_back_to_top"></a><a class="super" href="#26" rel="internal"><sup>[26]</sup></a></p>
+    </article>
+   </section>
+   <section class="main-section" id="References"> <!-- Reference Container -->
+    <header><u>References</u></header>
+    <article>
+      <ol>
+        <li><a href="#1_back_to_top" style="text-decoration: none;">^</a> <a name="1"></a><a class="source" href="https://en.wikipedia.org/wiki/FreeCodeCamp#cite_ref-1" target="_blank">freeCodeCamp's Wikipedia article</a> - Retrieved 2017-03-16</li>
+      </ol>
+    </article>
+   </section>
+</main>
+</body>
+<footer>&copy; 31st August,2021 Written and Coded By: Prince bhati</footer>
+
+</html>

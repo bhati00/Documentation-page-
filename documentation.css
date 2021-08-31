@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html,body{
+	font-family: 'Lato', Arial, sans-serif;
+	background-color: rgb(71, 196, 146);
+}
+#navbar{
+position: fixed;
+top: 0px;
+left: 0px;
+height: 100%;
+border:2px solid rgb(23, 131, 249); 
+}
+header{
+	font-size: 31px;
+  margin: 7px;
+  text-align: center;
+}
+.nav-link{
+	padding: 3px;
+  text-decoration: none;
+  cursor: pointer;
+ }
+ #navbar li {
+  font-color: rgb(23, 131, 249);
+  border: 2px solid blue;
+  padding: 7px;
+  list-style: none;
+  position: relative;
+  right: 17px;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 311px;
+  margin-bottom: 109px;
+  padding: 23px;
+}
+#main-doc header{
+	text-align: left;
+	margin: auto;
+  margin-top: 37px;
+}
+#main-doc a {
+  font-weight: bold;
+  color: red;
+}
+.main-section {
+  margin: 17px;
+}
+p {
+  margin-left: 23px;
+  width: 80%;
+  max-width: 100%;
+}
+h1 {
+  font-size: 2em;
+}
+code{
+display: block;
+  background-color: #eeeeee;
+  color: black;
+  text-align: left;
+  white-space: pre-wrap;
+  position: relative;
+  word-break: normal;
+  width: 79%;
+  max-width: 100%;
+  line-height: 2;
+  padding: 13px;
+  margin: 11px;
+  margin-left: 23px;
+  border-radius: 7px;	
+}
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+  padding: 3px;
+}
+@media only screen and (max-width: 736px) {
+  #navbar ul {
+    height: 207px;
+  }
+  #navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+   
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 370px;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3px;
+  }
+}
+@media only screen
+  and (max-device-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+  code {
+    font-size: .75em;
+    margin-left: -20px;
+    max-width: 100%;
+    padding: 15px 45px 15px 10px;
+    min-width: 233px;
+  }
+  footer {
+    padding: 3px;
+  }
+}
